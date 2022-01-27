@@ -5,17 +5,17 @@
 
 header {
     padding: 20px 35px;
-    background-color: white;
+    background-color: gray;
     justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
 }
 
 header h1 {
     font-weight:bold;
     font-size: 36px;
-    color: red;
+    color: rgb(0, 66, 121);
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -24,13 +24,16 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7x 0;
 }
 
-header nav ul li {
-    display: inline;
-}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
 
 header nav ul li a {
     margin: 0 30px;
@@ -43,3 +46,14 @@ body {
     background-color: rgb(57, 94, 94);
   }  
 
+
+  .hero {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  section {
+      padding:60px;
+      background-image: url("../images/4884785.jpg")
+  }
